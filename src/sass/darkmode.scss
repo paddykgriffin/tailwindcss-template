@@ -1,0 +1,17 @@
+[data-theme="dark"] {
+    --font-color: var(--light);
+    --link-color: var(--light);
+    --body-background: #121212;
+
+
+    header {
+        color: var(--font-color-dark);
+        background-color: var(--header-dark-bg-color);
+    }
+
+    footer {
+        color: var(--font-color-dark);
+        background-color: var(--footer-dark-bg-color);
+    }
+
+}

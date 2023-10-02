@@ -1,0 +1,71 @@
+@import './theme-variables';
+@import './fonts';
+@import './darkmode';
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    color: var(--font-color);
+    background-color: var(--body-background);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: var(--heading-h1);
+}
+h2 {
+    font-weight: 600;
+    font-size: var(--heading-h2);
+}
+h3 {
+    font-weight: 500;
+    font-size: var(--heading-h3);
+}
+h4 {
+    font-weight: 500;
+    font-size: var(--heading-h4);
+}
+
+p {
+    margin: 0;
+    padding-bottom: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--link-color);
+}
+
+
+#site-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    color: var(--light);
+    background-color: var(--header-bg-color);
+}
+
+main {
+    flex: 1;
+    height: auto;
+}
+
+
+footer {
+    color: var(--font-color);
+    background-color: var(--footer-bg-color);
+}
+

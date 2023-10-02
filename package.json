@@ -1,0 +1,81 @@
+{
+  "name": "react-vite-ts-boilerplate",
+  "description": "Very Fast React + Vite Boilerplate",
+  "version": "1.2.4",
+  "license": "MIT",
+  "scripts": {
+    "start": "vite --port 3000 --host",
+    "prod": "vite build",
+    "release": "standard-version"
+  },
+  "bin": "./bin/react-vite-ts-boilerplate.js",
+  "keywords": [
+    "react",
+    "boilerplate",
+    "typescript",
+    "starter"
+  ],
+  "author": "Paddy Griffin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paddykgriffin/react-typescript-boilerplate.git"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-responsive": "^8.2.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "3.1.9",
+    "@types/node": "^20.5.9",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "18.0.9",
+    "@types/react-responsive": "^8.0.2",
+    "@typescript-eslint/eslint-plugin": "6.7.3",
+    "@typescript-eslint/parser": "6.7.3",
+    "@vitejs/plugin-react": "2.2.0",
+    "@vitest/ui": "0.23.2",
+    "autoprefixer": "10.4.13",
+    "babel-polyfill": "6.26.0",
+    "c8": "7.12.0",
+    "core-js": "3.26.1",
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "husky": "8.0.2",
+    "is-core-module": "^2.13.0",
+    "jsdom": "20.0.2",
+    "lint-staged": "13.0.3",
+    "postcss": "8.4.16",
+    "postcss-normalize": "^10.0.1",
+    "prettier": "2.7.1",
+    "sass": "1.54.9",
+    "typescript": "^5.2.2",
+    "vite": "3.2.4",
+    "vite-plugin-checker": "0.5.1",
+    "vite-plugin-html": "3.2.0",
+    "vite-tsconfig-paths": "3.5.0",
+    "vitest": "0.23.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "browserslist": "last 2 versions",
+  "packageManager": "yarn@4.0.0-rc.18"
+}

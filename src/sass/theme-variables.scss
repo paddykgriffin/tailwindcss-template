@@ -1,0 +1,30 @@
+:root {
+
+    --gray: #cccccc;
+    --light-blue: #add8e6;
+
+    --dark: #333333;
+    --light: #ffffff;
+
+    --font-color: var(--dark);
+    --link-color: var(--light-blue);
+    --body-background: #eee;
+
+    --header-color: var(--white);
+
+    --header-bg-color: var(--dark);
+    --header-dark-bg-color: var(--dark);
+
+    --footer-bg-color: var(--light);
+    --footer-dark-bg-color: var(--dark);
+
+    // Font Sizes
+    --heading-h1: 4rem;
+    --heading-h2: 3.5rem;
+    --heading-h3: 3rem;
+    --heading-h4: 2.75rem;
+    --heading-h5: 2.25rem;
+    --heading-h6: 1.5rem;
+
+}
+
